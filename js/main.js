@@ -239,6 +239,12 @@ numberButtons.forEach(button => {
             return;
         }
         
+         if (operandOne == result && operandTwo == undefined) {
+            operandOne = undefined
+            
+
+        }
+        
         appendNumber(e.target.innerText);
     })
 })
