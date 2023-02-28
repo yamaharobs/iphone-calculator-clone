@@ -1,0 +1,167 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+  
+ 
+/*=====*/
+body {
+    font-family: Helvetica;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(135deg, #fffcf9 0%,#ffeddb 40%,#ffe4c4 100%);
+    
+}
+
+.calculator{
+    width: auto;
+    height: 490px;
+    background-color: black;
+    box-sizing: border-box;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    padding-bottom: 45px;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    
+    
+}
+.screen {
+    
+    color: white;
+    width: 100%;
+    max-width: 218px;
+    height: 50px;
+    font-size: 50px;
+    font-family: Arial;
+    display: flex;
+    justify-content: end;
+    box-sizing: border-box;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-bottom: 7px;
+    
+    
+    
+    
+
+}
+.calculator-keys { 
+    height: 60%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 6px;
+    align-items: center;
+    justify-items: center;
+    
+}
+button{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border-width: 0;
+    font-size: 20px;
+    
+    
+    
+    
+}
+button:hover{
+    filter: brightness(120%);
+}
+#zero{
+    grid-column: 1 / span 2;
+    width: 100px;
+    border-radius: 30px;
+    text-align: left;
+    padding-left: 17px;
+    
+    
+}
+.light-grey{
+    background-color: rgb(165, 165, 165);
+    
+}
+.dark-grey{
+    background-color: rgb(59, 59, 59);
+    color: white;
+}
+.orange{
+    background-color: orange;
+    color: white;
+}
+.home-button{
+    width: 80px;
+    height: 2px;
+    background-color: whitesmoke;
+    border-radius: 2px;
+    position: absolute;
+    bottom: 10px;
+    opacity: 80%;
+    
+
+}
+.time{
+    color: white;
+    position: absolute;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: .5px;
+    height: auto;
+    width: auto;
+    top: 30px;
+    left: 30px;
+}
+.battery{
+    color: white;
+    height: 5px;
+    position: absolute;
+    top: 25px;
+    right: 30px;
+}
+.iphone{
+    width: auto;
+    max-width: 248px;
+    height: auto;
+    padding: 3px;
+    background-color: rgb(59, 59, 59);
+    border-radius: 50px;
+    box-shadow: 3px 4px 15px black;
+}
